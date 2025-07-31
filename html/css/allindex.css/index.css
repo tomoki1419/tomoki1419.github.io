@@ -1,0 +1,159 @@
+body {
+  font-family: "M+ FONTS", sans-serif;
+  margin: 0; 
+  padding: 0; 
+  background-color: #f3f3f3;
+  color: #333;
+  font-weight: bold;
+}
+
+header {
+  position: absolute; 
+  top: 0;            
+  left: 0;           
+  width: 100%;       
+  z-index: 20;       
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px 20px; 
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+nav{
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: transparent;
+  position: static;
+  box-shadow: none;
+  list-style: none;    
+  padding: 0;
+  margin: 0; 
+}
+
+nav a {
+  color: white; 
+  text-decoration: none; 
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    width: 180px;
+    background-color: #ffffff;
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.about {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.menu-link {
+  text-align: center;
+  padding: 30px;
+}
+
+.menu-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.menu-item {
+    flex-basis: calc(33.33% - 20px);
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px auto; 
+}
+
+.menu {
+    text-align: center;
+    margin: 0 auto;    
+    padding: 20px; 
+}
+
+.view-all-menu a {
+  color: #000000;
+  text-decoration: none; 
+}
+
+.view-all-menu a:hover {
+  color: #949494;
+  text-decoration: underline; 
+  transition: color 0.2s ease;
+}
+
+.language-switcher button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.language-switcher button:hover {
+    background-color: #ffffff;
+    color: #333;
+}
